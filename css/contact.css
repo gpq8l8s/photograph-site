@@ -1,0 +1,89 @@
+:root {
+  /* Font Size */
+  --font-regular: 1em;
+  --font-small: 0.8em;
+  --font-title: 1.3em;
+  /* Padding Margin */
+  --margin-side: 7em;
+  --margin-between: 5em;
+  /* Color */
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-size: 1em;
+}
+
+/*===================
+Form 
+========================*/
+.form {
+  margin: var(--margin-between) var(--margin-side);
+  background-color: #eee;
+  width: 77.3vw;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+section p {
+  font-size: var(--font-title);
+  font-weight: 600;
+}
+
+section form {
+  height: 30vh;
+}
+
+section form .form_contatiner {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+section form .form_contatiner div {
+  display: flex;
+  padding: 0.8em;
+}
+
+section form .form_contatiner .name {
+  grid-row: span 1;
+  grid-column: span 1;
+  padding-right: 0.3em;
+}
+
+section form .form_contatiner .name input {
+  margin-right: 0.5em;
+}
+
+section form .form_contatiner .name label,
+section form .form_contatiner .email label,
+section form .form_contatiner .demande label,
+section form .form_contatiner .phone label,
+section form .form_contatiner .date label,
+section form .form_contatiner .message label {
+  padding-right: 1em;
+}
+
+.submit button {
+  border-style: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.4em 1em;
+  border-radius: 0.5em;
+  font-size: var(--font-small);
+  /*text-align: center; dosen't work*/
+}
+
+.submit button:hover {
+  transition: all 0.5s ease 0s;
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}

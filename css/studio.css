@@ -1,0 +1,84 @@
+:root {
+  /* Font Size */
+  --font-regular: 1em;
+  --font-small: 0.8em;
+  --font-title: 1.3em;
+  --title-margin: 0.3em;
+
+  /* Padding Margin */
+  --margin-side: 7em;
+  --margin-between: 5em;
+  /* Color */
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-size: 1em;
+}
+
+section {
+  margin: 2em var(--margin-side);
+}
+
+section article {
+  margin-bottom: var(--margin-between);
+  width: 82.5vw;
+}
+
+section article .title_text {
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: var(--title-margin);
+}
+
+section .studio .title,
+section .domicile .title,
+section .jardin .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*section .studio .title figure {
+  display: flex;
+}*/
+
+section .studio .title figure img,
+section .domicile .title figure img,
+section .jardin .title figure img {
+  width: 2vw;
+  height: 3.7vh;
+  border-radius: 100%;
+  padding-left: 0.3em;
+}
+
+section .studio .title figure img:hover,
+section .domicile .title figure img:hover,
+section .jardin .title figure img:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: all 0.5s ease 0s;
+}
+
+section .studio figure img {
+  width: 82.5vw;
+  height: 42vh;
+  object-fit: cover;
+  object-position: 0% 15%;
+  border-radius: 0.3em;
+}
+
+section .domicile figure img,
+section .jardin figure img {
+  width: 82.5vw;
+  height: 42vh;
+  object-fit: cover;
+  object-position: 0% 30%;
+}

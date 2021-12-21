@@ -1,0 +1,51 @@
+/* Navagator */
+
+nav {
+  display: inline;
+  margin: 30px var(--margin-side);
+}
+
+nav .logo {
+  text-align: center;
+}
+
+nav .logo img {
+  width: 25vw;
+}
+
+nav ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+nav ul li:hover {
+  opacity: 50%;
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li {
+  padding-right: 30px;
+  display: inline-block;
+}
+
+nav .line {
+  border-style: solid none none none;
+  border-width: 1px;
+  height: 0.5em;
+  color: rgba(0, 0, 0, 0.1);
+  margin-top: 0.5em;
+}
+
+/*Another way to align on center of the page
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  padding: 1em;
+  margin: 1em;
+}
+
+*/
