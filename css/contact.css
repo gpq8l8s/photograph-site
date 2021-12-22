@@ -73,13 +73,18 @@ section form .form_contatiner .message label {
   padding-right: 1em;
 }
 
+.submit {
+  position: relative;
+}
+
 .submit button {
+  position: absolute;
   border-style: none;
   background: rgba(255, 255, 255, 0.8);
   padding: 0.4em 1em;
   border-radius: 0.5em;
   font-size: var(--font-small);
-  /*text-align: center; dosen't work*/
+  text-align: center;
 }
 
 .submit button:hover {
