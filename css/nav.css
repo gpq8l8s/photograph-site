@@ -66,10 +66,10 @@ nav ul li{
     float: right;
     display: block;
   }
+  
   nav {
     flex-direction: column;
     align-items: flex-start;
-    padding: ;
   }
 
   .menu {
