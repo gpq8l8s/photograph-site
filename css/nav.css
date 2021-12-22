@@ -49,3 +49,42 @@ nav ul li{
 }
 
 */
+
+.material-icons {
+  font-size: 1.1em;
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .menu li {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .material-icons {
+    float: right;
+    display: block;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: ;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li.active {
+    display: flex;
+  }
+}

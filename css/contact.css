@@ -84,7 +84,7 @@ section form .form_contatiner .message label {
   padding: 0.4em 1em;
   border-radius: 0.5em;
   font-size: var(--font-small);
-  text-align: center;
+  right: 50%;
 }
 
 .submit button:hover {

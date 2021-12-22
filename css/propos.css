@@ -52,3 +52,40 @@ section .content .info .name {
   font-size: 1.1em;
   padding: 1em 0 3em 0;
 }
+
+/* ==================
+Responsive
+====================== */
+@media screen and (max-width: 1300px) {
+  section {
+    width: 70vw;
+  }
+  /*
+  justify-content: ;
+  text-align: ;
+  align-items: ;
+
+*/
+
+  .content {
+    flex-direction: column;
+  }
+
+  section .title {
+    padding-bottom: 0.5em;
+    text-align: left;
+  }
+
+  section .content figure img {
+    width: 70vw;
+  }
+
+  section .content .info {
+    margin: 0;
+    padding: 0 0.5em;
+  }
+
+  section .content .info .name {
+    padding: 1em 0 0.8em 0;
+  }
+}

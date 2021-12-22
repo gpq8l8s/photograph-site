@@ -26,11 +26,13 @@ body {
 
 section {
   margin: 2em var(--margin-side);
+  width: 82vw;
+  height: 180vh;
 }
 
 section article {
   margin-bottom: var(--margin-between);
-  width: 82.5vw;
+  /*width: 82.5vw;*/
 }
 
 section article .title_text {
@@ -67,7 +69,26 @@ section .jardin .title figure img:hover {
   transition: all 0.5s ease 0s;
 }
 
-section .studio figure img {
+section .studio .content,
+section .domicile .content,
+section .jardin .content {
+}
+
+section .studio .content .img_slider,
+section .domicile .content .img_slider,
+section .jardin .content .img_slider {
+  overflow: hidden;
+  display: flex;
+  width: 82.5vw;
+  height: 42vh;
+}
+
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image {
   width: 82.5vw;
   height: 42vh;
   object-fit: cover;
@@ -75,10 +96,15 @@ section .studio figure img {
   border-radius: 0.3em;
 }
 
-section .domicile figure img,
-section .jardin figure img {
+section .domicile .content figure img,
+section .jardin .content figure img {
   width: 82.5vw;
   height: 42vh;
   object-fit: cover;
   object-position: 0% 30%;
+}
+
+section .jardin .container .img_slider #swing {
+  object-position: 70% 100%;
+  object-fit: cover;
 }
