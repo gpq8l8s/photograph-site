@@ -58,7 +58,7 @@ section p {
 .wrapper .content .small {
   grid-row: span 14;
   grid-column: span 1;
-  background-image: url('./img/baby1.jpg');
+  background-image: url('../img/baby1.jpg');
   /*object-fit: cover;
   object-position: 0% 0%;
   width: 12em;
@@ -71,11 +71,11 @@ section p {
   grid-column: span 2;
   background-size: cover;
   background-position: center;
-  background-image: url('./img/pregnant2.jpg');
+  background-image: url('../img/pregnant2.jpg');
 }
 
 .wrapper .content #one {
-  background-image: url('./img/baby2.jpg');
+  background-image: url('../img/baby2.jpg');
   background-position: top;
 }
 
@@ -84,7 +84,7 @@ section p {
   grid-column: span 3;
   background-size: cover;
   background-position: center;
-  background-image: url('./img/child.jpg');
+  background-image: url('../img/child.jpg');
 }
 
 .wrapper .content .tall {
@@ -92,14 +92,14 @@ section p {
   grid-column: span 2;
   background-size: cover;
   background-position: center;
-  background-image: url('./img/duo.jpg');
+  background-image: url('../img/duo.jpg');
 }
 
 .wrapper .content .wide {
   grid-row: span 14;
   grid-column: span 3;
   background-size: cover;
-  background-image: url('./img/pregnant.png');
+  background-image: url('../img/pregnant.png');
   background-position: center;
 }
 
