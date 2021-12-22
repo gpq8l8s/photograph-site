@@ -163,7 +163,7 @@ section p {
 }
 
 section form {
-  height: 30vh;
+  height: 27vh;
 }
 
 section form .form_contatiner {
@@ -196,13 +196,19 @@ section form .form_contatiner .message label {
   padding-right: 1em;
 }
 
+.submit {
+  position: relative;
+}
+
 .submit button {
+  position: absolute;
   border-style: none;
   background: rgba(255, 255, 255, 0.8);
   padding: 0.4em 1em;
+  margin-bottom: 0.5em;
   border-radius: 0.5em;
   font-size: var(--font-small);
-  /*text-align: center; dosen't work*/
+  right: 50%;
 }
 
 .submit button:hover {
