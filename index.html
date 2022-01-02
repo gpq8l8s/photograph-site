@@ -30,135 +30,145 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!--<link rel="stylesheet" href="css/normalize.css" />-->
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- JavaScript Link   -->
+    <script src="/js/main.js" defer></script>
 
     <meta name="theme-color" content="#fafafa" />
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
     <!-- Navigator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href=""><img src="img/logo2.png" alt="" /></a>
-          <a href="#"><i class="material-icons">menu</i></a>
+          <a href=""
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
+          <a href="#" class="toggle"><i class="material-icons">menu</i></a>
         </figure>
         <!--<p id="logo_title">WelcomePhotograph</p>-->
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- Acceuil Main -->
     <main>
-      <article class="main1">
-        <figure>
-          <img src="img/baby1.jpg" alt="" />
+      <!-- Main First -->
+      <section class="mainFirst">
+        <figure class="mainFirst__image">
+          <img src="img/baby1.jpg" alt="nouveau-né" class="main__image first" />
         </figure>
-        <div class="main_text">
-          <p class="first_line">Lorem ipsum dolor sit amet</p>
-          <br />
-          <p class="second_line">consectetur adipiscing elit.</p>
-        </div>
-      </article>
-      <article class="main2">
-        <div class="text">
-          <p class="title">Lorem ipsum dolor sit.</p>
-          <p class="details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            excepturi, beatae unde necessitatibus iusto, similique dicta quo
-            tempora dolorum, explicabo totam cumque repellendus natus odio vel
-            delectus sapiente omnis. Sunt quo id laudantium, maiores architecto
-            similique, nulla dolorem magni asperiores velit magnam provident
-            quod ipsa. Reprehenderit odit ab aspernatur esse soluta sunt
-            voluptas nostrum reiciendis officia dolor!
-          </p>
-          <button>Découvrir</button>
-        </div>
-        <figure>
-          <img src="img/duo.jpg" alt="" />
-        </figure>
-      </article>
+        <article class="mainFirst__title">
+          <p class="mainFirst__title--first">Lorem ipsum dolor sit amet</p>
+          <p class="mainFirst__title--second">consectetur adipiscing elit.</p>
+        </article>
+      </section>
+      <!-- Main Second -->
+      <section class="mainSecond">
+        <article class="mainSecond__text">
+            <p class="mainSecond__text--title">Lorem ipsum dolor sit.</p>
+            <p class="mainSecond__text--details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              excepturi, beatae unde necessitatibus iusto, similique dicta quo
+              tempora dolorum, explicabo totam cumque repellendus natus odio vel
+              delectus sapiente omnis. Sunt quo id laudantium, maiores
+              architecto similique, nulla dolorem magni asperiores velit magnam
+              provident quod ipsa. Reprehenderit odit ab aspernatur esse soluta
+              sunt voluptas nostrum reiciendis officia dolor!
+            </p>
+            <button>Découvrir</button>
+          </div>
+        </article>
+          <figure>
+            <img src="img/duo.jpg" alt="enfant duo" />
+          </figure>
+      </section>
+      <!-- Main Travail -->
+      <section class="mainTravail">
+        <article>
+            <p class="mainTravail__title">Nos travails</p>
+            <figure>
+              <img src="img/child.jpg" alt="" id="main__travail--first" />
+              <img src="img/baby2.jpg" alt="" id="main__travail--second" />
+              <img src="img/baby1.jpg" alt="" id="main__travail--third" />
+            </figure>
+        </article>
+      </section>
+      <!-- Main Form -->
+      <section class="mainForm">
+        <p class="mainForm__title">Reservation</p>
+        <article>
+          <form class="mainForm__first">
+            <p class="mainForm__first--name">
+              <label>Nom et Prénom</label>
+              <input type="text" placeholder="Nom" name="" />
+              <input type="text" placeholder="Prénom" name="" class="prenom"/>
+            </p>
+            <p class="mainForm__first--options">
+              <label>Email</label>
+              <input type="email" placeholder="Email" name="" />
+            </p>
+            <p>
+              <label>Choisir le date</label>
+              <input type="date" name="" />
+            </p>
+            <p>
+              <label>Séance photo demandée</label>
+              <select>
+                <option>Séance grossesse</option>
+                <option>Séance nouveau-né</option>
+                <option>Séance grande bébé</option>
+                <option>Enfant solo</option>
+                <option>Enfant duo</option>
+              </select>
+            </p>
+          </form>
+          <form class="mainForm__second">
+            <p>
+              <label>Téléphone</label>
+              <input type="tel" placeholder="06 66 66 66 66" name="" />
+            </p>
+            <p>
+              <label>Message</label>
+              <input type="text" name="" size="40" id="message_height" />
+            </p>
+            <!--<input type="submit" value="submit">-->
+            <button>Submit</button>
+          </form>
+        </article>
+      </section>
     </main>
-    <section class="travail">
-      <article>
-        <p>Nos travails</p>
-        <figure class="image">
-          <img src="img/child.jpg" alt="" id="first" />
-          <img src="img/baby2.jpg" alt="" id="second" />
-          <img src="img/baby1.jpg" alt="" id="third" />
-        </figure>
-      </article>
-    </section>
-    <!-- Form -->
-    <section class="form">
-      <p>Reservation</p>
-      <form>
-        <div class="form_contatiner">
-          <div class="name">
-            <label>Nom et Prénom</label>
-            <input type="text" placeholder="Nom" name="" />
-            <input type="text" placeholder="Prénom" name="" />
-          </div>
-          <div class="email">
-            <label>Email</label>
-            <input type="email" placeholder="Email" name="" />
-          </div>
-          <div class="date">
-            <label>Choisir le date</label>
-            <input type="date" name="" />
-          </div>
-          <div class="demande">
-            <label>Séance photo demandée</label>
-            <select>
-              <option>Séance grossesse</option>
-              <option>Séance nouveau-né</option>
-              <option>Séance grande bébé</option>
-              <option>Enfant solo</option>
-              <option>Enfant duo</option>
-            </select>
-          </div>
-          <div class="phone">
-            <label>Téléphone</label>
-            <input type="tel" placeholder="06 66 66 66 66" name="" />
-          </div>
-          <div class="message">
-            <label>Message</label>
-            <input type="text" name="" size="40" id="message_height" />
-          </div>
-        </div>
-      </form>
-      <div class="submit">
-        <!--<input type="submit" value="submit">-->
-        <button>Submit</button>
-      </div>
-    </section>
     <!--  Footer  -->
     <footer>
       <div class="line"></div>
-      <div class="logo">
         <figure>
-          <img src="img/logo2.png" alt="" />
+          <img src="img/logo2.png" alt="WelcomePhotograph" />
         </figure>
-      </div>
-      <ul class="menu">
+      <ul>
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
 
     <!-- Add your site or application content here 

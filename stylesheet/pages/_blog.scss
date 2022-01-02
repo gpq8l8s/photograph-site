@@ -1,0 +1,75 @@
+/*================== Blog ==================*/
+.blog {
+  margin: 2em $marginSide;
+  justify-content: center;
+  &__news {
+    /*width: 80vw;*/
+    height: 110vh;
+    position: relative;
+    @include respond(desktop) {
+      height: 80vh;
+    }
+    @include respond(tablet) {
+      height: 60vh;
+    }
+    &--title {
+      @include title;
+    }
+    &--img {
+      img {
+        width: 95%;
+        float: right;
+        border-radius: 0.2em;
+      }
+    }
+    &--textMain {
+      @include fontScript;
+      top: 9%;
+      position: absolute;
+      @include respond(tabletBig) {
+        @include fontScript(2.5em);
+      }
+    }
+    &--textDetail {
+      position: absolute;
+      top: 50%;
+      width: 20vw;
+      height: 6vh;
+      @include respond(desktop) {
+        width: auto;
+        top: 20%;
+      }
+      @include respond(tabletBig) {
+        top: 62%;
+      }
+      @include respond(tablet) {
+        top: 57%;
+      }
+    }
+  }
+  &__travaux {
+    &--title {
+      @include title;
+      margin-bottom: $marginTitle;
+    }
+    &--img {
+      @include gridContainer(repeat(2, 2fr), repeat(2, 2fr), 0.5em);
+      @include respond(tabletBig) {
+        @include gridContainer(repeat(1, 1fr), repeat(1, 1fr), 0.5em);
+      }
+      img {
+        width: 42vw;
+        height: 40vh;
+        object-fit: cover;
+        padding-right: 0.1em;
+        border-radius: $marginTitle;
+        @include respond(tabletBig) {
+          width: 100%;
+        }
+        &:hover {
+          @include hover(50%, all 0.5s ease 0s);
+        }
+      }
+    }
+  }
+}

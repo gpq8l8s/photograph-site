@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WelcomePhotograph - Contact</title>
-    ``
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Nunito:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -15,29 +14,36 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/contact.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />-->
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navigator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href="index.html"><img src="img/logo2.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
           <i class="material-icons">menu</i>
         </figure>
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- Form -->
     <!--<section class="form">
@@ -67,23 +73,23 @@
     </section>-->
     <!-- Form -->
     <section class="form">
-      <p>Contactez-nous</p>
-      <form>
-        <div class="form_contatiner">
-          <div class="name">
+      <p class="form__title">Reservation</p>
+      <article>
+        <form class="form__first">
+          <p class="form__first--name">
             <label>Nom et Prénom</label>
             <input type="text" placeholder="Nom" name="" />
-            <input type="text" placeholder="Prénom" name="" />
-          </div>
-          <div class="email">
+            <input type="text" placeholder="Prénom" name="" class="prenom" />
+          </p>
+          <p class="form__first--options">
             <label>Email</label>
             <input type="email" placeholder="Email" name="" />
-          </div>
-          <div class="date">
+          </p>
+          <p>
             <label>Choisir le date</label>
             <input type="date" name="" />
-          </div>
-          <div class="demande">
+          </p>
+          <p>
             <label>Séance photo demandée</label>
             <select>
               <option>Séance grossesse</option>
@@ -92,21 +98,21 @@
               <option>Enfant solo</option>
               <option>Enfant duo</option>
             </select>
-          </div>
-          <div class="phone">
+          </p>
+        </form>
+        <form class="form__second">
+          <p>
             <label>Téléphone</label>
             <input type="tel" placeholder="06 66 66 66 66" name="" />
-          </div>
-          <div class="message">
+          </p>
+          <p>
             <label>Message</label>
             <input type="text" name="" size="40" id="message_height" />
-          </div>
-        </div>
-      </form>
-      <div class="submit">
-        <!--<input type="submit" value="submit">-->
-        <button>Submit</button>
-      </div>
+          </p>
+          <!--<input type="submit" value="submit">-->
+          <button>Submit</button>
+        </form>
+      </article>
     </section>
     <!--  Footer  -->
     <footer>
@@ -120,11 +126,12 @@
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
   </body>
 </html>

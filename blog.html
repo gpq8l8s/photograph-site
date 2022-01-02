@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/blog.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />-->
     <title>WelcomePhotograph - Blog</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Nunito:wght@300;400;500&display=swap"
@@ -16,36 +16,43 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navagator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href="index.html"><img src="img/logo2.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
           <i class="material-icons">menu</i>
         </figure>
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- Blog -->
-    <section>
-      <article class="news">
-        <p class="title">News</p>
-        <figure class="news_img">
+    <section class="blog">
+      <article class="blog__news">
+        <p class="blog__news--title">News</p>
+        <figure class="blog__news--img">
           <img src="img/salon2.jpg" alt="" />
         </figure>
-        <p class="new">New domicile studio is opening</p>
-        <p class="details">
+        <p class="blog__news--textMain">New domicile studio is opening</p>
+        <p class="blog__news--textDetail">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maiores
           enim ab molestias, incidunt, omnis accusamus nihil a inventore
           aliquam, laudantium commodi esse? Corporis sint eos, nostrum soluta
@@ -53,11 +60,13 @@
           Iure, blanditiis.
         </p>
       </article>
-      <article class="works">
-        <p class="title" id="work_title">Nos derniers travaux</p>
-        <figure class="works_img">
+      <article class="blog__travaux">
+        <p class="blog__travaux--title" id="travaux_title">
+          Nos derniers travaux
+        </p>
+        <figure class="blog__travaux--img">
           <img src="img/baby4.jpg" alt="" />
-          <img src="img/baby5.jpg" alt="" class="second_img" />
+          <img src="img/baby5.jpg" alt="" class="blog__travaux--secondImg" />
           <img src="img/child2.jpg" alt="" />
           <img src="img/pregnant3.jpg" alt="" />
         </figure>
@@ -80,6 +89,7 @@
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
   </body>
 </html>

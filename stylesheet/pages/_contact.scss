@@ -1,0 +1,47 @@
+.form {
+  margin: $marginBetween $marginSide;
+  background-color: #eee;
+  width: 77.3vw;
+  padding: 2em;
+  border-radius: 0.5em;
+  @include respond(tabletBig) {
+    width: 67.3vw;
+  }
+  &__title {
+    @include title;
+  }
+  .form {
+    @include gridContainer(repeat(2, 1fr), repeat(1, 1fr), 2);
+    height: 40vh;
+    padding: $marginTitle + $marginBottom;
+    @include respond(tablet) {
+      @include gridContainer(repeat(1, 1fr), repeat(1, 1fr), 1);
+    }
+  }
+  &__first {
+    flex-direction: column;
+    grid-column: span 1;
+    .prenom {
+      margin: $marginTitle 0em 0 7.3em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+  &__second {
+    p {
+      margin-bottom: 1em;
+    }
+  }
+  button {
+    @include btnForm;
+    position: relative;
+    right: -40%;
+  }
+  #message_height {
+    height: 20vh;
+    @include respond(tablet) {
+      width: 45vw;
+    }
+  }
+}

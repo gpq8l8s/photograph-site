@@ -1,0 +1,30 @@
+/*================== Footer ==================*/
+footer {
+  flex-direction: column;
+  display: inline;
+  margin: 0 $marginSide;
+  text-align: center;
+  font-size: $fontSmall;
+  .line {
+    border-style: solid none none none;
+    border-width: 1px;
+    height: 0.5em;
+    color: rgba(0, 0, 0, 0.1);
+    margin-top: $marginBottom;
+  }
+  figure img {
+    width: 18vw;
+  }
+  ul {
+    padding-left: 0;
+    text-align: center;
+    li {
+      padding-right: 1.2em;
+      position: relative;
+      display: inline-block;
+    }
+  }
+  p {
+    margin: $marginBottom + $marginTitle 0;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WelcomePhotograph - Préstation</title>
+    <title>WelcomePhotograph - Prestation</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Nunito:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -14,37 +14,44 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/prestation.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />-->
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navagator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href="index.html"><img src="img/logo2.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
           <i class="material-icons">menu</i>
         </figure>
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- Main -->
     <section class="prestation">
       <div>
-        <p class="prestation_title">Préstation</p>
+        <p class="prestation__title">Préstation</p>
       </div>
-      <div class="container">
-        <article class="grossesse">
+      <div class="prestation__wrapper">
+        <article class="prestation__wrapper--grossesse">
           <div>
             <p class="title">Séance Grossess</p>
             <div class="decouvrer">
@@ -73,19 +80,19 @@
             <p class="price">À partir de 200€</p>
           </div>
         </article>
-        <article class="nouveau-né">
+        <article class="prestation__wrapper--nouveauNe">
           <div>
             <p class="title">Séance Nouveau-né</p>
             <div class="decouvrer">
-              <p class="decouvrer_text">Découvrer plus</p>
+              <p class="decouvrer__text">Découvrer plus</p>
               <figure>
                 <img src="icons/back.png" alt="" />
               </figure>
             </div>
           </div>
-          <figure class="né_image">
+          <figure class="ne_image">
             <img src="img/baby1.jpg" alt="" />
-            <img src="img/newbornbaby.jpg" alt="" class="né_newborn" />
+            <img src="img/newbornbaby.jpg" alt="" class="newborn" />
           </figure>
           <div class="info">
             <ul>
@@ -102,7 +109,7 @@
             <p class="price">À partir de 200€</p>
           </div>
         </article>
-        <article class="grand_bébé">
+        <article class="prestation__wrapper--grandBebe">
           <div>
             <p class="title">Grand Bébé</p>
             <div class="decouvrer">
@@ -112,7 +119,7 @@
               </figure>
             </div>
           </div>
-          <figure class="bébé_image">
+          <figure class="bebe_image">
             <img src="img/baby2.jpg" alt="" />
             <img src="img/baby4.jpg" alt="" />
           </figure>
@@ -131,7 +138,7 @@
             <p class="price">À partir de 200€</p>
           </div>
         </article>
-        <article class="enfant_solo">
+        <article class="prestation__wrapper--enfantSolo">
           <div>
             <p class="title">Enfant Solo</p>
             <div class="decouvrer">
@@ -160,11 +167,11 @@
             <p class="price">À partir de 200€</p>
           </div>
         </article>
-        <article class="enfant_duo">
+        <article class="prestation__wrapper--enfantDuo">
           <div>
             <p class="title">Enfant Duo</p>
             <div class="decouvrer">
-              <p class="decouvrer_text">Découvrer plus</p>
+              <p class="decouvrer__text">Découvrer plus</p>
               <figure>
                 <img src="icons/back.png" alt="" />
               </figure>
@@ -203,11 +210,12 @@
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
   </body>
 </html>

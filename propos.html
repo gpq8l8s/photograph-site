@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/propos.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />-->
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Nunito:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -17,35 +17,42 @@
     />
 
     <title>WelcomePhotograph - A Propos</title>
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navagator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href="index.html"><img src="img/logo2.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
           <i class="material-icons">menu</i>
         </figure>
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- A Propos -->
-    <section>
-      <p class="title">A propos</p>
-      <div class="content">
+    <section class="propos">
+      <p class="propos__title">A propos</p>
+      <div class="propos__content">
         <figure>
           <img src="img/photographer1.jpg" alt="" />
         </figure>
-        <div class="info">
+        <div class="propos__content--info">
           <p class="name">Lorem ipsum</p>
           <p class="text">
             dolor sit amet consectetur adipisicing elit. Optio maxime
@@ -67,7 +74,6 @@
     <!--  Footer  -->
     <footer>
       <div class="line"></div>
-
       <div class="logo">
         <figure>
           <img src="img/logo2.png" alt="" />
@@ -77,11 +83,12 @@
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
   </body>
 </html>

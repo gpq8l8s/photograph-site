@@ -1,0 +1,61 @@
+/*================== Gallerie ==================*/
+.gallerie {
+  margin: 2em $marginSide;
+  &__title {
+    @include title;
+  }
+  .content {
+    height: 82vh;
+    &__portfolio {
+      @include gridContainer(repeat(5, 1fr), repeat(6, 1fr), 20px);
+      @include respond(tablet) {
+        @include gridContainer(repeat(2, 1fr), repeat(3, 1fr), 20px);
+      }
+      height: 100%;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+        border-radius: 0.2em;
+        &:hover {
+          @include hover(50%, all 0.5s ease 0s);
+        }
+      }
+      &--small {
+        @include gridElement(1, 1);
+        background-image: url('../img/baby1.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+      &--medium {
+        @include gridElement(2, 2);
+        background-image: url('../img/pregnant2.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      #one {
+        background-image: url('../img/baby2.jpg');
+        background-position: top;
+      }
+      &--large {
+        @include gridElement(3, 3);
+        background-image: url('../img/child.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      &--tall {
+        @include gridElement(3, 2);
+        background-image: url('../img/duo.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      &--wide {
+        @include gridElement(2, 3);
+        background-image: url('../img/pregnant.png');
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}

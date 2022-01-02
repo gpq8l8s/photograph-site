@@ -1,0 +1,51 @@
+/*================== Studio ==================*/
+.studio {
+  margin: 2em $marginSide;
+  &__studio {
+    margin-bottom: $marginBetween;
+    &--title {
+      @include title;
+      @include flex-space;
+    }
+  }
+  &__imgIcons img {
+    width: 2vw;
+    height: 3.7vh;
+    object-fit: cover;
+    border-radius: 100%;
+    @include respond(tablet) {
+      height: 2vh;
+    }
+    &:hover {
+      @include hover(50%, all 0.5s ease 0s);
+    }
+  }
+  &__content--img {
+    display: flex;
+    overflow: hidden;
+    height: 42vh;
+    figure img {
+      display: flex;
+      width: 82.5vw;
+      height: 42vh;
+      object-fit: cover;
+      object-position: 0% 15%;
+      border-radius: 0.3em;
+    }
+  }
+  &__domicile,
+  &__jardin {
+    margin-bottom: $marginBetween;
+  }
+  &__domicile--title,
+  &__jardin--title {
+    @include title;
+    @include flex-space;
+  }
+  .slider_image_jardin {
+    object-position: 100% 20%;
+  }
+  &__content--detail {
+    margin-top: $marginTitle;
+  }
+}

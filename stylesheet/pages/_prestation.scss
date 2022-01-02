@@ -1,0 +1,130 @@
+/*================== Prestation ==================*/
+.prestation {
+  margin: 2em $marginSide;
+  @include respond(tablet) {
+    margin: 1em $marginSide;
+  }
+  &__title {
+    @include title;
+  }
+  &__wrapper {
+    @include gridContainer(repeat(1, 1fr), repeat(5, 1fr), 1);
+    justify-content: center;
+    &--grossesse {
+      margin-bottom: 0;
+    }
+  }
+  .duo_image img,
+  .grossesse_image,
+  .pregnana_2 {
+    object-position: 0% 50%;
+  }
+  .newborn {
+    object-position: 0% 30%;
+  }
+  .decouvrer {
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+    figure img {
+      width: 1.2em;
+      padding-left: 0.2em;
+    }
+    &__text {
+      font-size: $fontSmall;
+    }
+  }
+  .title {
+    @include gridElement(1, 1);
+    @include respond(tabletBig) {
+      font-size: $fontRegular;
+    }
+    font-size: $fontTitle;
+    /*margin-bottom: $marginTitle;*/
+  }
+
+  &__wrapper--grossesse,
+  &__wrapper--nouveauNe,
+  &__wrapper--grandBebe,
+  &__wrapper--enfantSolo,
+  &__wrapper--enfantDuo {
+    margin-bottom: $marginBetween/2;
+    height: 60vh;
+    justify-content: center;
+  }
+  &__wrapper--grossesse div,
+  &__wrapper--nouveauNe div,
+  &__wrapper--grandBebe div,
+  &__wrapper--enfantSolo div,
+  &__wrapper--enfantDuo div {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper--grossesse,
+  &__wrapper--nouveauNe,
+  &__wrapper--grandBebe,
+  &__wrapper--enfantSolo,
+  &__wrapper--enfantDuo {
+    height: 55vh;
+    @include respond(tablet) {
+      height: 47vh;
+    }
+    .grossesse_image img,
+    .ne_image img,
+    .bebe_image img,
+    .solo_image img,
+    .duo_image img {
+      object-fit: cover;
+      object-position: 0% 0%;
+      width: 41vw;
+      height: 40vh;
+      padding-right: $marginBottom;
+      border-radius: 0.2em;
+      @include respond(desktop) {
+        width: 38vw;
+        height: 37vh;
+      }
+      @include respond(tabletBig) {
+        width: 35vw;
+        height: 34vh;
+        object-position: 50% 0%;
+      }
+      @include respond(tablet) {
+        object-position: 50% 0%;
+        width: 33vw;
+        height: 31vh;
+      }
+      @include respond(mobile) {
+        background-color: aqua;
+      }
+      &:hover {
+        @include hover(50%, all 0.5s ease 0s);
+      }
+    }
+    .price {
+      margin: 1.2em 1em 0 0;
+      font-size: 1.1em;
+      @include respond(desktop) {
+        position: relative;
+        width: 25%;
+        margin-left: 1em;
+      }
+      @include respond(tablet) {
+        font-size: $fontSmall;
+        font-weight: 600;
+        margin: auto;
+        width: auto;
+        position: static;
+      }
+    }
+    .info {
+      width: 75%;
+      position: absolute;
+    }
+    @include respond(tablet) {
+      position: static;
+      width: auto;
+    }
+  }
+}

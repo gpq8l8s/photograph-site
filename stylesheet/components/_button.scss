@@ -1,0 +1,26 @@
+@mixin btnMain {
+  background: $colorBtnMain;
+  border-style: none;
+  padding: 0.5em 1.1em;
+  border-radius: 0.5em;
+  font-size: $fontSmall;
+  margin-top: 3em;
+  &:hover {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    background: $colorBtnMainHv;
+  }
+}
+
+@mixin btnForm {
+  background: $colorBtnForm;
+  border-style: none;
+  padding: 0.5em 1.1em;
+  border-radius: 0.5em;
+  font-size: $fontSmall;
+  &:hover {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    background: $btnFormHv;
+  }
+}

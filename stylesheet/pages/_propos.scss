@@ -1,0 +1,30 @@
+/*================== A Propos ==================*/
+.propos {
+  margin: 2em $marginSide;
+  @include respond(desktop) {
+    text-align: center;
+  }
+  &__title {
+    @include title;
+  }
+  &__content {
+    display: flex;
+    @include respond(desktop) {
+      display: block;
+    }
+    figure img {
+      width: 55vw;
+      border-radius: 0.5em;
+    }
+    &--info {
+      margin-left: 2em;
+      .name {
+        @include title(1.1em);
+        padding: 1em 0 3em 0;
+        @include respond(desktop) {
+          padding: 1em 0 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.nav {
+  margin: 30px $marginSide;
+  @include respond(tablet) {
+    margin: 15px 4em;
+  }
+  &__logo {
+    text-align: center;
+    &--image {
+      width: 25vw;
+    }
+    .material-icons {
+      display: none;
+      @include respond(tablet) {
+        display: block;
+        text-align: right;
+        font-size: $fontTitle;
+      }
+    }
+  }
+  &__menu {
+    padding-left: 0;
+    justify-content: center;
+    display: flex;
+    @include respond(tablet) {
+      display: none;
+    }
+
+    li {
+      padding-right: 30px;
+      @include respond(tabletBig) {
+        font-size: $fontSmall;
+      }
+      &:hover {
+        opacity: 50%;
+        transition: all 0.5s ease 0s;
+      }
+    }
+  }
+
+  &__line {
+    border-style: solid none none none;
+    border-width: 1px;
+    height: 0.5em;
+    color: rgba(0, 0, 0, 0.1);
+    margin-top: 0.5em;
+  }
+}

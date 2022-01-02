@@ -1,0 +1,15 @@
+@mixin textNormal {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+@mixin fontScript($size: 4em) {
+  font-family: 'Dancing Script', cursive;
+  font-size: $size;
+  font-weight: 600;
+}
+
+@mixin title($size: $fontTitle) {
+  font-size: $size;
+  font-weight: 600;
+  margin-bottom: $marginTitle;
+}

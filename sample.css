@@ -1,0 +1,851 @@
+/* Navagator */
+
+nav {
+  display: inline;
+  margin: 30px var(--margin-side);
+}
+
+nav .logo {
+  text-align: center;
+}
+
+nav .logo img {
+  width: 25vw;
+}
+
+nav ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+nav ul li:hover {
+  opacity: 50%;
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li {
+  padding-right: 30px;
+  display: inline-block;
+}
+
+nav .line {
+  border-style: solid none none none;
+  border-width: 1px;
+  height: 0.5em;
+  color: rgba(0, 0, 0, 0.1);
+  margin-top: 0.5em;
+}
+
+/*Another way to align on center of the page
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  padding: 1em;
+  margin: 1em;
+}
+
+*/
+
+.material-icons {
+  font-size: 1.1em;
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .menu li {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .material-icons {
+    float: right;
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li.active {
+    display: flex;
+  }
+}
+
+:root {
+  /* Font Size */
+  --font-regular: 1em;
+  --font-small: 0.8em;
+  --font-title: 1.3em;
+  /* Padding Margin */
+  --margin-side: 7em;
+  --margin-between: 5em;
+  --title-margin: 0.3em;
+
+  /* Color */
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-size: 1em;
+}
+
+/* ===================
+Main
+======================= */
+
+main {
+  margin: 2em var(--margin-side);
+}
+
+/* Main 1*/
+main .main1 {
+  display: flex;
+}
+
+main .main1 img {
+  position: relative;
+  border-radius: 0.1em;
+}
+
+main .main1 .first_line {
+  font-size: 2em;
+  margin-right: 5em;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  font-weight: 600;
+}
+
+main .main1 .second_line {
+  font-size: 2em;
+  margin-right: 5em;
+  position: absolute;
+  left: 60%;
+  top: 45%;
+}
+
+main .main1 figure img {
+  width: 60vw;
+}
+
+/*Main 2*/
+
+main .main2 {
+  display: flex;
+  margin-top: var(--margin-between);
+}
+
+main .main2 figure img {
+  object-fit: cover;
+  object-position: 0% 60%;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 0.1em;
+}
+
+main .main2 .text {
+  flex-direction: column;
+  width: 30vw;
+  padding-right: 1.5em;
+  text-align: center;
+}
+
+main .main2 .title {
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 2em;
+  padding: 1em 1em 0 0;
+  text-align: start;
+}
+
+main .main2 .details {
+  font-size: var(--font-regular);
+  margin-bottom: 2em;
+  text-align: start;
+}
+
+main .main2 .text button {
+  border-style: none;
+  background: rgba(226, 226, 226, 0.3);
+  padding: 0.5em 1.1em;
+  border-radius: 0.5em;
+  font-size: var(--font-small);
+}
+
+main .main2 .text button:hover {
+  transition: all 0.5s ease 0s;
+  background: rgba(226, 226, 226, 0.9);
+
+  cursor: pointer;
+}
+
+/*==================
+Travail
+=========================*/
+.travail {
+  margin: var(--margin-between) var(--margin-side);
+}
+
+.travail article p {
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: var(--title-margin);
+}
+
+.travail figure {
+  display: flex;
+}
+
+.travail figure img {
+  width: 26.5vw;
+  border-radius: 0.2em;
+}
+
+.travail figure img:hover {
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.travail figure #second {
+  padding: 0 1em;
+}
+
+/*===================
+Reservation
+========================*/
+.form {
+  margin: var(--margin-between) var(--margin-side);
+  background-color: #eee;
+  width: 77.3vw;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+section p {
+  font-size: var(--font-title);
+  font-weight: 600;
+}
+
+section form {
+  height: 27vh;
+}
+
+section form .form_contatiner {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+section form .form_contatiner div {
+  display: flex;
+  padding: 0.8em;
+}
+
+section form .form_contatiner .name {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+section form .form_contatiner .name input {
+  margin-right: 0.5em;
+}
+
+section form .form_contatiner .name label,
+section form .form_contatiner .email label,
+section form .form_contatiner .demande label,
+section form .form_contatiner .phone label,
+section form .form_contatiner .date label,
+section form .form_contatiner .message label {
+  padding-right: 1em;
+}
+
+.submit {
+  position: relative;
+}
+
+.submit button {
+  position: absolute;
+  border-style: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.4em 1em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  font-size: var(--font-small);
+  right: 50%;
+}
+
+.submit button:hover {
+  transition: all 0.5s ease 0s;
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
+/* Gallerie */
+
+section {
+  margin: 2em var(--margin-side);
+}
+section p {
+  font-size: var(--font-title);
+  margin-bottom: var(--title-margin);
+  font-weight: 600;
+}
+
+.wrapper {
+  height: 82vh;
+  /*flex: 1 1 88%;
+  min-height: 100vh;*/
+  margin-bottom: 2em;
+}
+
+.wrapper .content {
+  display: grid;
+  /*height: 100%;
+  border: 1px solid #000;*/
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+}
+
+.wrapper .content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 0.2em;
+}
+
+.wrapper .content .small {
+  grid-row: span 14;
+  grid-column: span 1;
+  background-image: url('../img/baby1.jpg');
+  /*object-fit: cover;
+  object-position: 0% 0%;
+  width: 12em;
+  height: 10em;*/
+  background-size: cover;
+}
+
+.wrapper .content .medium {
+  grid-row: span 14;
+  grid-column: span 2;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/pregnant2.jpg');
+}
+
+.wrapper .content #one {
+  background-image: url('../img/baby2.jpg');
+  background-position: top;
+}
+
+.wrapper .content .large {
+  grid-row: span 14;
+  grid-column: span 3;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/child.jpg');
+}
+
+.wrapper .content .tall {
+  grid-row: span 28;
+  grid-column: span 2;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/duo.jpg');
+}
+
+.wrapper .content .wide {
+  grid-row: span 14;
+  grid-column: span 3;
+  background-size: cover;
+  background-image: url('../img/pregnant.png');
+  background-position: center;
+}
+
+.wrapper .content div:hover {
+  opacity: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+/* News */
+section {
+  margin: 2em var(--margin-side);
+}
+
+section article .title {
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+section .news {
+  width: 80vw;
+  height: 110vh;
+  position: relative;
+}
+
+section .news .news_img img {
+  width: 65vw;
+  float: right;
+  border-radius: 0.1em;
+}
+
+section .news .new {
+  font-weight: 600;
+  position: absolute;
+  top: 9%;
+  font-size: 4em;
+  font-family: 'Dancing Script', cursive;
+}
+
+section .news .details {
+  position: absolute;
+  top: 50%;
+  width: 20vw;
+  height: 6vh;
+}
+
+/* Works */
+section .works figure img {
+  width: 40vw;
+  height: 40vh;
+  object-fit: cover;
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+section .works .works_img .second_img {
+  object-position: 0% 40%;
+}
+
+section .works #work_title {
+  margin-bottom: 0.3em;
+}
+
+section .works .works_img img:hover {
+  opacity: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+/*=============== 
+Préstation 
+=================*/
+.prestation {
+  margin: 2em var(--margin-side);
+}
+
+.prestation .prestation_title {
+  font-weight: 600;
+  font-size: var(--font-title);
+  margin-bottom: 1em;
+}
+
+.prestation .container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+}
+
+.prestation .grossesse {
+  margin-bottom: 0;
+}
+
+.prestation .grossesse,
+.prestation .nouveau-né,
+.prestation .grand_bébé,
+.prestation .enfant_solo,
+.prestation .enfant_duo {
+  margin-bottom: var(--margin-between);
+  height: 60vh;
+  justify-content: center;
+}
+
+.prestation .grossesse div,
+.prestation .nouveau-né div,
+.prestation .grand_bébé div,
+.prestation .enfant_solo div,
+.prestation .enfant_duo div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prestation .container .grossesse_image img,
+.prestation .container .né_image img,
+.prestation .container .bébé_image img,
+.prestation .container .solo_image img,
+.prestation .container .duo_image img {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 41.5vw;
+  height: 40vh;
+  padding-right: 0.5em;
+  border-radius: 0.1em;
+}
+
+.prestation .container .grossesse_image img:hover,
+.prestation .container .né_image img:hover,
+.prestation .container .bébé_image img:hover,
+.prestation .container .solo_image img:hover,
+.prestation .container .duo_image img:hover {
+  opacity: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.prestation .container .duo_image img,
+.prestation .container .grossesse_image .pregnana_2 {
+  object-position: 0% 50%;
+}
+
+.prestation .container .né_image .né_newborn {
+  object-position: 0% 30%;
+}
+
+.prestation .container .decouvrer {
+  text-decoration: underline;
+}
+
+.prestation .container .decouvrer:hover {
+  cursor: pointer;
+}
+
+.prestation .container .decouvrer figure > img {
+  width: 1.2em;
+  padding-left: 0.2em;
+}
+
+.prestation .container .decouvrer .decouvrer_text {
+  font-size: var(--font-small);
+}
+
+.prestation .container .grossesse p,
+.prestation .container .nouveau-né p,
+.prestation .container .grand_bébé p,
+.prestation .container .enfant_solo p,
+.prestation .container .enfant_duo p {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.prestation .container div .title {
+  font-size: var(--font-title);
+  margin-bottom: var(--title-margin);
+}
+
+.prestation .container article ul li {
+  list-style: disc;
+}
+
+.prestation .container .grossesse .price,
+.prestation .container .nouveau-né .price,
+.prestation .container .grand_bébé .price,
+.prestation .container .enfant_solo .price,
+.prestation .container .enfant_duo .price {
+  margin: 2.2em 1em 0 0;
+  font-size: 1.1em;
+}
+
+.prestation .container .grossesse .info {
+  justify-content: space-between;
+}
+
+.price {
+}
+
+/*=========================
+Studio
+=======================*/
+
+section {
+  margin: 2em var(--margin-side);
+  width: 82vw;
+  height: 180vh;
+}
+
+section article {
+  margin-bottom: var(--margin-between);
+  /*width: 82.5vw;*/
+}
+
+section article .title_text {
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: var(--title-margin);
+}
+
+section .studio .title,
+section .domicile .title,
+section .jardin .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*section .studio .title figure {
+  display: flex;
+}*/
+
+section .studio .title figure img,
+section .domicile .title figure img,
+section .jardin .title figure img {
+  width: 2vw;
+  height: 3.7vh;
+  border-radius: 100%;
+  padding-left: 0.3em;
+}
+
+section .studio .title figure img:hover,
+section .domicile .title figure img:hover,
+section .jardin .title figure img:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: all 0.5s ease 0s;
+}
+
+section .studio .content .img_slider,
+section .domicile .content .img_slider,
+section .jardin .content .img_slider {
+  overflow: hidden;
+  display: flex;
+  width: 82.5vw;
+  height: 42vh;
+}
+
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image,
+section .studio .content figure .image {
+  width: 82.5vw;
+  height: 42vh;
+  object-fit: cover;
+  object-position: 0% 15%;
+  border-radius: 0.3em;
+}
+
+section .domicile .content figure img,
+section .jardin .content figure img {
+  width: 82.5vw;
+  height: 42vh;
+  object-fit: cover;
+  object-position: 0% 30%;
+}
+
+section .jardin .container .img_slider #swing {
+  object-position: 70% 100%;
+  object-fit: cover;
+}
+
+/*======================
+Propos 
+=======================*/
+
+body {
+  font-size: 1em;
+}
+
+section {
+  margin: 2em var(--margin-side);
+}
+
+section .title {
+  font-weight: 600;
+  font-size: var(--font-title);
+  padding-bottom: var(--font-title);
+}
+
+section .content {
+  display: flex;
+}
+
+section .content figure img {
+  width: 55vw;
+  border-radius: 0.5em;
+}
+
+section .content .info {
+  margin-left: 2em;
+}
+
+section .content .info .name {
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 1em 0 3em 0;
+}
+
+/* ==================
+Responsive
+====================== */
+@media screen and (max-width: 1300px) {
+  section {
+    width: 70vw;
+  }
+  /*
+  justify-content: ;
+  text-align: ;
+  align-items: ;
+
+*/
+
+  .content {
+    flex-direction: column;
+  }
+
+  section .title {
+    padding-bottom: 0.5em;
+    text-align: left;
+  }
+
+  section .content figure img {
+    width: 70vw;
+  }
+
+  section .content .info {
+    margin: 0;
+    padding: 0 0.5em;
+  }
+
+  section .content .info .name {
+    padding: 1em 0 0.8em 0;
+  }
+}
+
+/*==========================
+Contact
+=====================*/
+.form {
+  margin: var(--margin-between) var(--margin-side);
+  background-color: #eee;
+  width: 77.3vw;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+section p {
+  font-size: var(--font-title);
+  font-weight: 600;
+}
+
+section form {
+  height: 30vh;
+}
+
+section form .form_contatiner {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+section form .form_contatiner div {
+  display: flex;
+  padding: 0.8em;
+}
+
+section form .form_contatiner .name {
+  grid-row: span 1;
+  grid-column: span 1;
+  padding-right: 0.3em;
+}
+
+section form .form_contatiner .name input {
+  margin-right: 0.5em;
+}
+
+section form .form_contatiner .name label,
+section form .form_contatiner .email label,
+section form .form_contatiner .demande label,
+section form .form_contatiner .phone label,
+section form .form_contatiner .date label,
+section form .form_contatiner .message label {
+  padding-right: 1em;
+}
+
+.submit {
+  position: relative;
+}
+
+.submit button {
+  position: absolute;
+  border-style: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.4em 1em;
+  border-radius: 0.5em;
+  font-size: var(--font-small);
+  right: 50%;
+}
+
+.submit button:hover {
+  transition: all 0.5s ease 0s;
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
+/*===============
+Footer
+==========================*/
+footer {
+  flex-direction: column;
+  display: inline;
+  margin: 0 var(--margin-side);
+}
+
+footer .logo {
+  text-align: center;
+}
+
+footer .logo img {
+  width: 18vw;
+}
+
+footer ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+footer ul li {
+  padding-right: 1.2em;
+  position: relative;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+footer .line {
+  border-style: solid none none none;
+  border-width: 1px;
+  height: 0.5em;
+  color: rgba(0, 0, 0, 0.1);
+  margin-top: 0.5em;
+}

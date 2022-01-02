@@ -1,0 +1,50 @@
+@mixin gridContainer($col, $row, $grid-gap) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+  gap: $grid-gap;
+}
+
+@mixin gridElement($row, $column) {
+  grid-column: span $column;
+  grid-row: span $row;
+}
+
+@mixin hover($opacity, $transition) {
+  opacity: $opacity;
+  transition: $transition;
+  cursor: pointer;
+}
+
+@mixin flex-space($display: flex, $justify: space-between) {
+  display: $display;
+  justify-content: $justify;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==desktop {
+    @media only screen and (max-width: 1300px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktopBtn {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tabletBig {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 786px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+}

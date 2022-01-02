@@ -14,36 +14,42 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/gallerie.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />-->
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navigator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href="index.html"><img src="img/logo2.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
           <i class="material-icons">menu</i>
         </figure>
         <!--<p id="logo_title">WelcomePhotograph</p>-->
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- Gallerie -->
-    <section>
-      <p>Nos travails</p>
-      <article>
-        <!--<figure>
+    <section class="gallerie">
+      <p class="gallerie__title">Nos travails</p>
+      <!--<figure>
           <img src="img/baby1.jpg" alt="" class="img1" />
           <img src="img/baby2.jpg" alt="" class="img2" />
           <img src="img/child.jpg" alt="" class="img3" />
@@ -52,15 +58,14 @@
           <img src="img/baby3.jpg" alt="" class="img6" />
           <img src="img/pregnant2.jpg" alt="" class="img7" />
         </figure>-->
-        <div class="wrapper">
-          <div class="content">
-            <div class="medium" id="one"></div>
-            <div class="large"></div>
-            <div class="medium"></div>
-            <div class="small"></div>
-            <div class="tall"></div>
-            <div class="wide"></div>
-          </div>
+      <article class="content">
+        <div class="content__portfolio">
+          <div class="content__portfolio--medium" id="one"></div>
+          <div class="content__portfolio--large"></div>
+          <div class="content__portfolio--medium"></div>
+          <div class="content__portfolio--small"></div>
+          <div class="content__portfolio--tall"></div>
+          <div class="content__portfolio--wide"></div>
         </div>
       </article>
     </section>
@@ -76,11 +81,12 @@
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
   </body>
 </html>

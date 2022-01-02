@@ -14,74 +14,89 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/studio.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />-->
 
     <script src="main.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon_io-2/favicon-16x16.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navagator -->
-    <nav>
-      <div class="logo">
+    <nav class="nav">
+      <div class="nav__logo">
         <figure>
-          <a href="index.html"><img src="img/logo2.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="img/logo2.png" alt="" class="nav__logo--image"
+          /></a>
           <i class="material-icons">menu</i>
         </figure>
       </div>
-      <ul class="menu">
+      <ul class="nav__menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="line"></div>
+      <div class="nav__line"></div>
     </nav>
     <!-- Studio -->
-    <section>
-      <article class="studio">
-        <div class="title">
-          <p class="title_text">Studio</p>
-          <figure>
-            <img src="img/studio.jpg" alt="" />
-            <img src="img/studioYellow.jpg" alt="" />
-            <img src="img/studioBeige.jpg" alt="" />
-            <img src="img/studioGrey.jpg" alt="" />
-            <img src="img/studioBlue.jpg" alt="" />
-            <img src="img/studioRed.jpg" alt="" />
+    <section class="studio">
+      <article class="studio__studio">
+        <div class="studio__studio--title">
+          <p class="studio__title">Studio</p>
+          <figure class="studio__imgIcons">
+            <img src="img/studio.jpg" alt="studio" />
+            <img src="img/studioYellow.jpg" alt="studio" />
+            <img src="img/studioBeige.jpg" alt="studio" />
+            <img src="img/studioGrey.jpg" alt="studio" />
+            <img src="img/studioBlue.jpg" alt="studio" />
+            <img src="img/studioRed.jpg" alt="studio" />
           </figure>
         </div>
-        <div class="content">
-          <div class="img_slider">
+        <div class="studio__content">
+          <div class="studio__content--img">
             <figure>
-              <img src="img/studio.jpg" alt="" class="slider_image_studio" />
+              <img
+                src="img/studio.jpg"
+                alt="studio"
+                class="slider_image_studio"
+              />
               <img
                 src="img/studioYellow.jpg"
-                alt=""
+                alt="studio"
                 class="slider_image_studio"
               />
               <img
                 src="img/studioBeige.jpg"
-                alt=""
+                alt="studio"
                 class="slider_image_studio"
               />
               <img
                 src="img/studioGrey.jpg"
-                alt=""
+                alt="studio"
                 class="slider_image_studio"
               />
               <img
                 src="img/studioBlue.jpg"
-                alt=""
+                alt="studio"
                 class="slider_image_studio"
               />
-              <img src="img/studioRed.jpg" alt="" class="slider_image_studio" />
+              <img
+                src="img/studioRed.jpg"
+                alt="studio"
+                class="slider_image_studio"
+              />
             </figure>
           </div>
-          <p>
+          <p class="studio__content--detail">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             elementum lectus elementum, luctus nulla vestibulum, vulputate
             lectus. Praesent dapibus vitae ante in elementum. Duis eget
@@ -90,26 +105,43 @@
           </p>
         </div>
       </article>
-      <article class="domicile">
-        <div class="title">
-          <p class="title_text">Domicile</p>
-          <figure>
-            <img src="img/room1.jpg" alt="" />
-            <img src="img/room2.jpg" alt="" />
-            <img src="img/salon1.jpg" alt="" />
-            <img src="img/salon2.jpg" alt="" />
+      <!-- Domicil -->
+      <article class="studio__domicile">
+        <div class="studio__domicile--title">
+          <p class="studio__title">Domicile</p>
+          <figure class="studio__imgIcons">
+            <img src="img/room1.jpg" alt="studio-domicile" />
+            <img src="img/room2.jpg" alt="studio-domicile" />
+            <img src="img/salon1.jpg" alt="studio-domicile" />
+            <img src="img/salon2.jpg" alt="studio-domicile" />
           </figure>
         </div>
-        <div class="content">
-          <div class="img_slider">
+        <div class="studio__content">
+          <div class="studio__content--img">
             <figure>
-              <img src="img/room1.jpg" alt="" class="slider_image_domicile" />
-              <img src="img/room2.jpg" alt="" claass="slider_image_domicile" />
-              <img src="img/salon1.jpg" alt="" claass="slider_image_domicile" />
-              <img src="img/salon2.jpg" alt="" claass="slider_image_domicile" />
+              <img
+                src="img/room1.jpg"
+                alt="studio-domicile"
+                class="slider_image_domicile"
+              />
+              <img
+                src="img/room2.jpg"
+                alt="studio-domicile"
+                claass="slider_image_domicile"
+              />
+              <img
+                src="img/salon1.jpg"
+                alt="studio-domicile"
+                claass="slider_image_domicile"
+              />
+              <img
+                src="img/salon2.jpg"
+                alt="studio-domicile"
+                claass="slider_image_domicile"
+              />
             </figure>
           </div>
-          <p>
+          <p class="studio__content--detail">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             elementum lectus elementum, luctus nulla vestibulum, vulputate
             lectus. Praesent dapibus vitae ante in elementum. Duis eget
@@ -118,22 +150,34 @@
           </p>
         </div>
       </article>
-      <article class="jardin">
-        <div class="title">
-          <p class="title_text">Jardin</p>
-          <figure>
-            <img src="img/garden1.jpg" alt="" />
-            <img src="img/garden2.jpg" alt="" />
-            <img src="img/jardin2.jpg" alt="" />
-            <img src="img/jardin3.jpg" alt="" />
+      <article class="studio__jardin">
+        <div class="studio__jardin--title">
+          <p class="studio__title">Jardin</p>
+          <figure class="studio__imgIcons">
+            <img src="img/garden1.jpg" alt="studio-jardin" />
+            <img src="img/garden2.jpg" alt="studio-jardin" />
+            <img src="img/jardin2.jpg" alt="studio-jardin" />
+            <img src="img/jardin3.jpg" alt="studio-jardin" />
           </figure>
         </div>
-        <div class="content">
-          <div class="img_slider">
+        <div class="studio__content">
+          <div class="studio__content--img">
             <figure>
-              <img src="img/jardin2.jpg" alt="" class="slider_image_jardin" />
-              <img src="img/garden2.jpg" alt="" class="slider_image_jardin" />
-              <img src="img/jardin2.jpg" alt="" class="slider_image_jardin" />
+              <img
+                src="img/jardin2.jpg"
+                alt="studio-jardin"
+                class="slider_image_jardin"
+              />
+              <img
+                src="img/garden2.jpg"
+                alt="studio-jardin"
+                class="slider_image_jardin"
+              />
+              <img
+                src="img/jardin2.jpg"
+                alt="studio-jardin"
+                class="slider_image_jardin"
+              />
               <img
                 src="img/jardin3.jpg"
                 alt=""
@@ -142,7 +186,7 @@
               />
             </figure>
           </div>
-          <p>
+          <p class="studio__content--detail">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             elementum lectus elementum, luctus nulla vestibulum, vulputate
             lectus. Praesent dapibus vitae ante in elementum. Duis eget
@@ -164,11 +208,12 @@
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="gallerie.html">Gallerie</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="prestation.html">Préstation</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
         <li><a href="studio.html">Le Studio</a></li>
         <li><a href="propos.html">A Propos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>copyright© 2021 WelcomePhotograph. All Rights Reserved</p>
     </footer>
   </body>
 </html>

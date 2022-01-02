@@ -13,9 +13,10 @@
 
 - Errors on solving
 
-  1. List-style : préstation
-  2. carousel
-  3. <strike>gallery page</strike> <em>fixed<em>
+  1. List-style : prestation <em>fixed<em>
+  2. <strike>gallery page</strike> <em>fixed<em>
+  3. Favicon
+     <em>fixed<em>
 
 ---
 
@@ -36,13 +37,10 @@
 
 ### Errors on solving
 
-1. List-style - préstation page
+1. <strike>List-style - prestation page<strike>
    <img src="img_md/list-style.png" width="400">
    : has to be same start line with photo <br>
 
-2. Carousel
-   : dosn't work well in the page if studio <br>
-
-3. <strike>Gallery page</strike>
+2. <strike>Gallery page</strike>
    <img src="img_md/gallery.png" width="400"> <br>
-   : On my local, yes but on git page photo doesn't show up in the page of gallery
+   : On my local yes but photo doesn't show up in the page of gallery on git page

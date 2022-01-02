@@ -1,0 +1,10 @@
+{
+  "liveServer.settings.port": 5501,
+  "files.exclude": {
+    "l": true,
+    "doc": true,
+    "sample.css": true,
+    "js/vendor": true,
+    "js/plugins.js": true
+  }
+}
