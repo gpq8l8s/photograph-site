@@ -13,9 +13,9 @@
 
 - Errors on solving
 
-  1. List-style : prestation <em>fixed<em>
+  1. <strike>List-style<strike> : prestation <em>fixed<em>
   2. <strike>gallery page</strike> <em>fixed<em>
-  3. Favicon
+  3. <strike>Favicon<strike>
      <em>fixed<em>
 
 ---
